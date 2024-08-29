@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n\n");
+    printf("Enter the choice:");
+    scanf("%d",&c);
+    printf("\nEnter the input value a:");
+    scanf("%d",&a);
+    printf("\nEnter the input value b:");
+    scanf("%d",&b);
+    if(c==1)
+    {
+        printf("%d+%d=%d",a,b,a+b);
+    }
+    
+    else if(c==2)
+    {
+        printf("%d-%d=%d",a,b,a-b);
+    }
+    
+    else if(c==3)
+    {
+        printf("%d*%d=%d",a,b,a*b);
+    }
+    
+    else if(c==4)
+    {
+        printf("%d/%d=%d",a,b,a/b);
+    }
+    else
+    {
+        printf("invalid input");
+    }
+}
